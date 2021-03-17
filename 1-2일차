@@ -1,0 +1,25 @@
+##CCNP(S) 1-2일차  
+- Subnet 계산법
+- /32 /31 /30 /29 /28 /27 /26 /25 /24 /23 /22 /21 /20  
+- 1개 
+ex) 10.23.10.0/30  
+ex) 10.120.70.0/22  
+
+- Core, Distribution, Access Switch  
+
+- End to End VLANs  
+- 사용자의 물리적 위치에 상관없이 동일한 VLANs에 묶일 수 있음  
+- Local VLANs  
+- 물리적 위치에 따라 다른 VLAN에 묶일 수 있음  
+
+- VLAN 설정 방법
+- VLAN 생성, 포트에 엑세스 모드 설정, 포트에 VLAN 설정
+ex) vlan 3
+name Account
+exit
+interface fa0/1
+switport mode access
+switchport access vlan 3
+end
+ex) show vlan
+
