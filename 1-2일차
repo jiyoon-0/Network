@@ -23,3 +23,14 @@ switchport access vlan 3
 end
 ex) show vlan
 
+Inter VLAN  
+- 다수의 VLAN을 통한 통신을 위해 각 프레임마다 VLAN 식별을 위한 정보가 존재  
+- Native VLAN은 트렁크 구간을 지날 때 프레임에 Tag를 달지 않음
+- DTP(Dynamic Trunking Protocol) : 트렁크 포트 자동 협상 프로토콜  
+ex) interface fa5/8
+shutdown
+switchport trunk encapsulation dotlq
+switchport trunk allowed vlan 1,5,11
+switchport trunk native vlan 99
+swti  nenegotiate
+no shut
